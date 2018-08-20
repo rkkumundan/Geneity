@@ -39,21 +39,21 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_genity_url_in_chrome_web_browser()"
 });
 formatter.result({
-  "duration": 11980086097,
+  "duration": 7944390985,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 76517561,
+  "duration": 128098146,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 62250314,
+  "duration": 116172506,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -106,7 +106,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "rturk",
+        "rajqa",
         "g3n31ty123"
       ],
       "line": 18,
@@ -141,7 +141,7 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "unsigned in user should be able to enter \"rturk\" and \"g3n31ty123\"",
+  "name": "unsigned in user should be able to enter \"rajqa\" and \"g3n31ty123\"",
   "matchedColumns": [
     0,
     1
@@ -157,20 +157,20 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_genity_url_in_chrome_web_browser()"
 });
 formatter.result({
-  "duration": 6968154475,
+  "duration": 2704213270,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 122462912,
+  "duration": 122036070,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "rturk",
+      "val": "rajqa",
       "offset": 42
     },
     {
@@ -181,33 +181,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 380514412,
+  "duration": 367800826,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 337041066,
+  "duration": 248143541,
   "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 22,
-  "name": "Verify if uunsigned in user able to login application",
-  "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-uunsigned-in-user-able-to-login-application",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 21,
-      "name": "@RegressionTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 23,
-  "name": "unsigned in user opens the genity url in firefox web browser",
-  "keyword": "Given "
 });
 });

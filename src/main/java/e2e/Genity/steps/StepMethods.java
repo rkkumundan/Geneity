@@ -11,6 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class StepMethods {
 	WebDriver driver;
@@ -50,7 +53,9 @@ public class StepMethods {
 	}
 	public void unsigned_in_user_submits_from() {
 		driver.findElement(By.xpath("//*[@id=\'header-area\']/div[1]/div[1]/form/button")).click();
-		driver.close();
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebElement ErrorResponse = (WebElement) wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'My account')]")));
+
 
 	}
 }
