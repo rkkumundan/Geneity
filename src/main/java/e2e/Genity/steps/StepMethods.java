@@ -45,7 +45,7 @@ public class StepMethods {
 		assertThat(ActualTitle, equalTo(ExpectedTitle));
 	}
 	public void unsigned_in_user_closes_the_browser() {
-		driver.close();
+		driver.quit();
 	}
 	public void unsigned_in_user_sends_username_and_password(String username, String password) {
 		driver.findElement(By.name("username")).sendKeys(username);
@@ -54,8 +54,19 @@ public class StepMethods {
 	public void unsigned_in_user_submits_from() {
 		driver.findElement(By.xpath("//*[@id=\'header-area\']/div[1]/div[1]/form/button")).click();
 		WebDriverWait wait = new WebDriverWait(driver,30);
-		WebElement ErrorResponse = (WebElement) wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[contains(text(),'My account')]")));
-
-
+		WebElement ErrorResponse;
+		ErrorResponse = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'My Account')]")));
+		String ExpectedErrorResponse = "My Account";
+		String ActualErrorResponse = ErrorResponse.getText();
+		assertThat(ActualErrorResponse, equalTo(ExpectedErrorResponse));
 	}
+	public void unsigned_in_user_submits_from_with_wrong_credentials() {
+		driver.findElement(By.xpath("//*[@id=\'header-area\']/div[1]/div[1]/form/button")).click();
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebElement ErrorResponse;
+		ErrorResponse = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\'header-area\']/div[1]/div[1]/div")));
+		String ActualErrorResponse = ErrorResponse.getText();
+		String ExpectedErrorResponse = "Incorrect username or password entered.<br>Verify your account information and try again.\nx";
+		assertThat(ActualErrorResponse, equalTo(ExpectedErrorResponse));
+	}	
 }
