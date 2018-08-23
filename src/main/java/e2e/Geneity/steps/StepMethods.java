@@ -1,4 +1,4 @@
-package e2e.Genity.steps;
+package e2e.Geneity.steps;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -48,7 +48,7 @@ public class StepMethods {
 		driver.quit();
 	}
 	public void unsigned_in_user_sends_username_and_password(String username, String password) {
-		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.name("username")).sendKeys(password);
 		driver.findElement(By.name("password")).sendKeys(password);
 	}
 	public void unsigned_in_user_submits_from() {

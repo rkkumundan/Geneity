@@ -1,4 +1,4 @@
-package e2e.Genity.steps;
+package e2e.Geneity.steps;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

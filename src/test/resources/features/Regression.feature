@@ -6,7 +6,7 @@ Given unsigned in user opens the genity url in chrome web browser
 Then unsigned in user should be able to see the page
 And unsigned in user closes the browser
 
-#@RegressionTest
+@RegressionTest
 Scenario Outline: Verify if unsigned in user able to login application
 Given unsigned in user opens the genity url in chrome web browser
 When unsigned in user should be able to see the page
@@ -31,9 +31,9 @@ Examples:
 | rajqa     | g3n31ty	 | 
 | 123456    | g3n31ty123 | 
 | g3n31ty123| g3n31ty123 | 
-| rajqa     | g3n31ty123| Volleyball   	 | 1.00  |
 
-@RegressionTest
+
+#@RegressionTest
 Scenario Outline: Verify if a Vaild user able to Place a bet for Inplay event
 Given unsigned in user opens the genity url in chrome web browser
 When unsigned in user should be able to see the page
@@ -47,4 +47,5 @@ And verify if Bet is placed
 Examples:
 | username  | password  | sport     		 | value |
 | rajqa     | g3n31ty123| Football   		 | 1.00  |
+
 
