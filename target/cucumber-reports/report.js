@@ -1,115 +1,168 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Regression.feature");
 formatter.feature({
   "line": 1,
-  "name": "To Test the RightMove Web Application functionality for Sale",
+  "name": "To Test the Geneity frontend functionality",
   "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale",
+  "id": "to-test-the-geneity-frontend-functionality",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 11,
-  "name": "Verify if unsigned in user able to login application",
+  "line": 37,
+  "name": "Verify if a Vaild user able to Place a bet for Inplay event",
   "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application",
+  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-to-place-a-bet-for-inplay-event",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 10,
+      "line": 36,
       "name": "@RegressionTest"
     }
   ]
 });
 formatter.step({
-  "line": 12,
+  "line": 38,
   "name": "unsigned in user opens the genity url in chrome web browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 13,
+  "line": 39,
   "name": "unsigned in user should be able to see the page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 14,
+  "line": 40,
   "name": "unsigned in user should be able to enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 41,
   "name": "unsigned in user submits the form",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 42,
+  "name": "signed in user able to click on the \"\u003csport\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "singed in user should able to open the \"\u003csport\u003e\" page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 44,
+  "name": "singed in user should able to select the selection and place the bet with \"\u003cvalue\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
   "name": "unsigned in user closes the browser",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 18,
+  "line": 47,
   "name": "",
   "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application;",
+  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-to-place-a-bet-for-inplay-event;",
   "rows": [
     {
       "cells": [
         "username",
-        "password"
+        "password",
+        "sport",
+        "value"
       ],
-      "line": 19,
-      "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application;;1"
+      "line": 48,
+      "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-to-place-a-bet-for-inplay-event;;1"
     },
     {
       "cells": [
         "rajqa",
-        "g3n31ty123"
+        "g3n31ty123",
+        "Football",
+        "1.00"
       ],
-      "line": 20,
-      "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application;;2"
+      "line": 49,
+      "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-to-place-a-bet-for-inplay-event;;2"
+    },
+    {
+      "cells": [
+        "rajqa",
+        "g3n31ty123",
+        "Volleyball",
+        "1.00"
+      ],
+      "line": 50,
+      "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-to-place-a-bet-for-inplay-event;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 20,
-  "name": "Verify if unsigned in user able to login application",
+  "line": 49,
+  "name": "Verify if a Vaild user able to Place a bet for Inplay event",
   "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application;;2",
+  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-to-place-a-bet-for-inplay-event;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 10,
+      "line": 36,
       "name": "@RegressionTest"
     }
   ]
 });
 formatter.step({
-  "line": 12,
+  "line": 38,
   "name": "unsigned in user opens the genity url in chrome web browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 13,
+  "line": 39,
   "name": "unsigned in user should be able to see the page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 14,
+  "line": 40,
   "name": "unsigned in user should be able to enter \"rajqa\" and \"g3n31ty123\"",
   "matchedColumns": [
     0,
     1
   ],
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 41,
   "name": "unsigned in user submits the form",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 42,
+  "name": "signed in user able to click on the \"Football\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "singed in user should able to open the \"Football\" page",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 44,
+  "name": "singed in user should able to select the selection and place the bet with \"1.00\"",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
   "name": "unsigned in user closes the browser",
   "keyword": "And "
 });
@@ -117,14 +170,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_genity_url_in_chrome_web_browser()"
 });
 formatter.result({
-  "duration": 7027398205,
+  "duration": 6335637102,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 140893428,
+  "duration": 111390257,
   "status": "passed"
 });
 formatter.match({
@@ -141,143 +194,126 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 541178372,
+  "duration": 614514697,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 1665066039,
+  "duration": 1579050561,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Football",
+      "offset": 37
+    }
+  ],
+  "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
+});
+formatter.result({
+  "duration": 3324793877,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Football",
+      "offset": 40
+    }
+  ],
+  "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
+});
+formatter.result({
+  "duration": 86794651,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1.00",
+      "offset": 75
+    }
+  ],
+  "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String)"
+});
+formatter.result({
+  "duration": 428707408,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 92252222,
+  "duration": 79430187,
   "status": "passed"
 });
-formatter.scenarioOutline({
-  "line": 23,
-  "name": "Verify if unsigned in user able to login application with Wrong credentials",
-  "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 22,
-      "name": "@RegressionTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 24,
-  "name": "unsigned in user opens the genity url in chrome web browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "unsigned in user should be able to see the page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "unsigned in user should be able to enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "unsigned in user submits the form with wrong credentials",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "unsigned in user closes the browser",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 30,
-  "name": "",
-  "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 31,
-      "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;;1"
-    },
-    {
-      "cells": [
-        "rajqa",
-        "g3n31ty"
-      ],
-      "line": 32,
-      "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;;2"
-    },
-    {
-      "cells": [
-        "123456",
-        "g3n31ty123"
-      ],
-      "line": 33,
-      "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;;3"
-    },
-    {
-      "cells": [
-        "g3n31ty123",
-        "g3n31ty123"
-      ],
-      "line": 34,
-      "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
 formatter.scenario({
-  "line": 32,
-  "name": "Verify if unsigned in user able to login application with Wrong credentials",
+  "line": 50,
+  "name": "Verify if a Vaild user able to Place a bet for Inplay event",
   "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;;2",
+  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-to-place-a-bet-for-inplay-event;;3",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 22,
+      "line": 36,
       "name": "@RegressionTest"
     }
   ]
 });
 formatter.step({
-  "line": 24,
+  "line": 38,
   "name": "unsigned in user opens the genity url in chrome web browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 25,
+  "line": 39,
   "name": "unsigned in user should be able to see the page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 26,
-  "name": "unsigned in user should be able to enter \"rajqa\" and \"g3n31ty\"",
+  "line": 40,
+  "name": "unsigned in user should be able to enter \"rajqa\" and \"g3n31ty123\"",
   "matchedColumns": [
     0,
     1
   ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "unsigned in user submits the form with wrong credentials",
   "keyword": "And "
 });
 formatter.step({
-  "line": 28,
+  "line": 41,
+  "name": "unsigned in user submits the form",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 42,
+  "name": "signed in user able to click on the \"Volleyball\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "singed in user should able to open the \"Volleyball\" page",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 44,
+  "name": "singed in user should able to select the selection and place the bet with \"1.00\"",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
   "name": "unsigned in user closes the browser",
   "keyword": "And "
 });
@@ -285,14 +321,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_genity_url_in_chrome_web_browser()"
 });
 formatter.result({
-  "duration": 3077274916,
+  "duration": 2732335179,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 122357726,
+  "duration": 137439406,
   "status": "passed"
 });
 formatter.match({
@@ -302,204 +338,67 @@ formatter.match({
       "offset": 42
     },
     {
-      "val": "g3n31ty",
+      "val": "g3n31ty123",
       "offset": 54
     }
   ],
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 512038763,
+  "duration": 623683565,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinations.unsigned_in_user_submits_the_form_with_wrong_credentials()"
+  "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 596587846,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinations.unsigned_in_user_closes_the_browser()"
-});
-formatter.result({
-  "duration": 89439632,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 33,
-  "name": "Verify if unsigned in user able to login application with Wrong credentials",
-  "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 22,
-      "name": "@RegressionTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 24,
-  "name": "unsigned in user opens the genity url in chrome web browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "unsigned in user should be able to see the page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "unsigned in user should be able to enter \"123456\" and \"g3n31ty123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "unsigned in user submits the form with wrong credentials",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "unsigned in user closes the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinations.unsigned_in_user_opens_the_genity_url_in_chrome_web_browser()"
-});
-formatter.result({
-  "duration": 2645102225,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
-});
-formatter.result({
-  "duration": 75621387,
+  "duration": 1760220001,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "123456",
-      "offset": 42
-    },
-    {
-      "val": "g3n31ty123",
-      "offset": 55
+      "val": "Volleyball",
+      "offset": 37
     }
   ],
-  "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
+  "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 605368864,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinations.unsigned_in_user_submits_the_form_with_wrong_credentials()"
-});
-formatter.result({
-  "duration": 468016292,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinations.unsigned_in_user_closes_the_browser()"
-});
-formatter.result({
-  "duration": 95410627,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 34,
-  "name": "Verify if unsigned in user able to login application with Wrong credentials",
-  "description": "",
-  "id": "to-test-the-rightmove-web-application-functionality-for-sale;verify-if-unsigned-in-user-able-to-login-application-with-wrong-credentials;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 22,
-      "name": "@RegressionTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 24,
-  "name": "unsigned in user opens the genity url in chrome web browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "unsigned in user should be able to see the page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "unsigned in user should be able to enter \"g3n31ty123\" and \"g3n31ty123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "unsigned in user submits the form with wrong credentials",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "unsigned in user closes the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinations.unsigned_in_user_opens_the_genity_url_in_chrome_web_browser()"
-});
-formatter.result({
-  "duration": 2791408255,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
-});
-formatter.result({
-  "duration": 86306727,
+  "duration": 978228113,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "g3n31ty123",
-      "offset": 42
-    },
-    {
-      "val": "g3n31ty123",
-      "offset": 59
+      "val": "Volleyball",
+      "offset": 40
     }
   ],
-  "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
+  "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 705845639,
+  "duration": 144725747,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinations.unsigned_in_user_submits_the_form_with_wrong_credentials()"
+  "arguments": [
+    {
+      "val": "1.00",
+      "offset": 75
+    }
+  ],
+  "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String)"
 });
 formatter.result({
-  "duration": 565969019,
+  "duration": 409699844,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 93865089,
+  "duration": 74077793,
   "status": "passed"
 });
 });

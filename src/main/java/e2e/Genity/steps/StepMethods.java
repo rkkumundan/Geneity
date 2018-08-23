@@ -69,4 +69,16 @@ public class StepMethods {
 		String ExpectedErrorResponse = "Incorrect username or password entered.<br>Verify your account information and try again.\nx";
 		assertThat(ActualErrorResponse, equalTo(ExpectedErrorResponse));
 	}	
+	public void signed_in_user_clicks_on_sport(String sport) {
+		driver.findElement(By.linkText(sport)).click();
+	}
+	public void signed_in_user_clicks_on_sport_check_the_page_displayed(String sport) {
+		String sporttype = driver.findElement(By.cssSelector("#main-area > div.fragment.sports-title > div.heading > h2")).getText();
+		assertThat(sport, equalTo(sporttype));
+	}
+	public void signed_in_user_makes_selection_and_submits_the_bet_with_value(String value) {
+		driver.findElement(By.xpath("//*[@id='inplayForSport-tab-VOLL']/div/table/tbody/tr[1]/td[4]/div/button")).click();
+		driver.findElement(By.xpath("//*[@id=\'betslip\']/table[1]/tbody[2]/tr[2]/td/table/tbody/tr/td[2]/table[2]/tbody/tr/td[2]/div/input")).sendKeys(value);
+		driver.findElement(By.name("place_slip")).click();
+	}
 }
