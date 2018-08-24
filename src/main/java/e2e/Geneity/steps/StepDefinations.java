@@ -5,22 +5,28 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import e2e.Geneity.objects.CloseBrowser;
+import e2e.Geneity.objects.HomePageTitleAssertion;
 
 public class StepDefinations {
 	public WebDriver driver = new ChromeDriver();
 	StepMethods SM = new StepMethods(driver);
-
-@Given("^unsigned in user opens the genity url in chrome web browser$")
-public void unsigned_in_user_opens_the_genity_url_in_chrome_web_browser() throws Throwable {
+	HomePageTitleAssertion homePageTitleAssertion;
+	CloseBrowser closeBrowser;
+	
+@Given("^unsigned in user opens the geneity url in chrome web browser$")
+public void unsigned_in_user_opens_the_geneity_url_in_chrome_web_browser() throws Throwable {
     SM.user_opens_genbet_url();
 }
 @Then("^unsigned in user should be able to see the page$")
 public void unsigned_in_user_should_be_able_to_see_the_page() throws Throwable {
-	SM.user_check_web_title_assertion();
+	homePageTitleAssertion  = new HomePageTitleAssertion(driver);
+	homePageTitleAssertion.CheckTitleAssertion();
 }
 @Then("^unsigned in user closes the browser$")
 public void unsigned_in_user_closes_the_browser() throws Throwable {
-	SM.unsigned_in_user_closes_the_browser();
+	closeBrowser = new CloseBrowser(driver);
+	closeBrowser.CloseCurrentBrowser();
 }
 @Then("^unsigned in user should be able to enter \"([^\"]*)\" and \"([^\"]*)\"$")
 public void unsigned_in_user_should_be_able_to_enter_and(String username, String password) throws Throwable {
