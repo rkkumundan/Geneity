@@ -39,21 +39,21 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_geneity_url_in_web_browser()"
 });
 formatter.result({
-  "duration": 3368104881,
+  "duration": 3139550552,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 143653306,
+  "duration": 185670515,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_or_signed_in_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 363890197,
+  "duration": 181931113,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -230,14 +230,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_geneity_url_in_web_browser()"
 });
 formatter.result({
-  "duration": 2910184127,
+  "duration": 2834710406,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 183221476,
+  "duration": 149092202,
   "status": "passed"
 });
 formatter.match({
@@ -254,14 +254,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 665601625,
+  "duration": 599911271,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 1933473632,
+  "duration": 1693791471,
   "status": "passed"
 });
 formatter.match({
@@ -274,7 +274,7 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 3827755439,
+  "duration": 4131360925,
   "status": "passed"
 });
 formatter.match({
@@ -287,7 +287,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 101472422,
+  "duration": 63546053,
   "status": "passed"
 });
 formatter.match({
@@ -300,22 +300,22 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String)"
 });
 formatter.result({
-  "duration": 440955361,
+  "duration": 3576327797,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.verify_if_Bet_is_placed()"
 });
 formatter.result({
-  "duration": 11092548716,
+  "duration": 12287212102,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.signed_in_user_logsout_from_webapplication()"
 });
 formatter.result({
-  "duration": 10082663328,
-  "error_message": "java.lang.NullPointerException\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)\n\tat e2e.Geneity.interaction.UserLogout.LogoutUser(UserLogout.java:26)\n\tat e2e.Geneity.steps.StepDefinations.signed_in_user_logsout_from_webapplication(StepDefinations.java:64)\n\tat ✽.And signed in user logsout from webapplication(Regression.feature:62)\n",
+  "duration": 6955261272,
+  "error_message": "java.lang.NullPointerException\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)\n\tat e2e.Geneity.interaction.UserLogout.LogoutUser(UserLogout.java:26)\n\tat e2e.Geneity.feature.steps.StepDefinations.signed_in_user_logsout_from_webapplication(StepDefinations.java:66)\n\tat ✽.And signed in user logsout from webapplication(Regression.feature:62)\n",
   "status": "failed"
 });
 formatter.match({

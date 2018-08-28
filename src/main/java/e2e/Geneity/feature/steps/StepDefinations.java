@@ -1,4 +1,4 @@
-package e2e.Geneity.steps;
+package e2e.Geneity.feature.steps;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,9 +20,10 @@ import e2e.Geneity.interaction.UserSubmitsLoginInvalidCredentials;
 
 public class StepDefinations {
 	public WebDriver driver = new ChromeDriver();
-	StepMethods SM = new StepMethods(driver);
+	
 	HomePageTitleAssertion homePageTitleAssertion;
 	CloseBrowser closeBrowser;
+	OpenBrowserURL openBrowserURL;
 	UserLogin userLogin;
 	UserSubmitsLogin userSubmitsLogin;
 	UserSubmitsLoginInvalidCredentials userSubmitsLoginInvalidCredentials;
@@ -36,7 +37,8 @@ public class StepDefinations {
 
 	@Given("^unsigned in user opens the geneity url in web browser$")
 	public void unsigned_in_user_opens_the_geneity_url_in_web_browser() throws Throwable {
-		SM.user_opens_genbet_url();
+		openBrowserURL = new OpenBrowserURL(driver);
+		openBrowserURL.OpenGenBetURL();
 	}
 	@Then("^unsigned in user should be able to see the page$")
 	public void unsigned_in_user_should_be_able_to_see_the_page() throws Throwable {

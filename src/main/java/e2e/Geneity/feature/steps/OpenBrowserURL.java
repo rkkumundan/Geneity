@@ -1,4 +1,4 @@
-package e2e.Geneity.steps;
+package e2e.Geneity.feature.steps;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,12 +8,12 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
-public class StepMethods {
+public class OpenBrowserURL {
 	WebDriver driver;
-	public StepMethods(WebDriver driver) {
+	public OpenBrowserURL(WebDriver driver) {
 		this.driver=driver;   
 	}
-	public void user_opens_genbet_url() {
+	public void OpenGenBetURL() {
 		File file = new File("src/main/resources/url.properties");
 		FileInputStream fileInput = null;
 		try {
