@@ -200,14 +200,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_geneity_url_in_chrome_web_browser()"
 });
 formatter.result({
-  "duration": 4533685275,
+  "duration": 9009671068,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 134183114,
+  "duration": 105321576,
   "status": "passed"
 });
 formatter.match({
@@ -224,14 +224,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 679862314,
+  "duration": 637128805,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 1616711415,
+  "duration": 1911666493,
   "status": "passed"
 });
 formatter.match({
@@ -244,7 +244,7 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 4264460847,
+  "duration": 3542484979,
   "status": "passed"
 });
 formatter.match({
@@ -257,7 +257,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 69885299,
+  "duration": 61163038,
   "status": "passed"
 });
 formatter.match({
@@ -270,29 +270,29 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String)"
 });
 formatter.result({
-  "duration": 389851362,
+  "duration": 446379067,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.verify_if_Bet_is_placed()"
 });
 formatter.result({
-  "duration": 11188097798,
+  "duration": 12851246506,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.signed_in_user_logsout_from_webapplication()"
 });
 formatter.result({
-  "duration": 4146863240,
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.39.562737 (dba483cee6a5f15e2e2d73df16968ab10b38a2bf),platform\u003dLinux 4.4.0-133-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027gnl-l-w-015\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.4.0-133-generic\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562737 (dba483cee6a5f1..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: eab80a23c845903109eac99afa5cfd20\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:317)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)\n\tat e2e.Geneity.objects.UserLogout.LogoutUser(UserLogout.java:30)\n\tat e2e.Geneity.steps.StepDefinations.signed_in_user_logsout_from_webapplication(StepDefinations.java:58)\n\tat ✽.And signed in user logsout from webapplication(Regression.feature:47)\n",
-  "status": "failed"
+  "duration": 2378260722,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_or_signed_in_user_closes_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 77990219,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 53,
@@ -375,14 +375,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_geneity_url_in_chrome_web_browser()"
 });
 formatter.result({
-  "duration": 2793336773,
+  "duration": 3322440910,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 174353540,
+  "duration": 120495143,
   "status": "passed"
 });
 formatter.match({
@@ -399,14 +399,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 586864089,
+  "duration": 489473410,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 1512934579,
+  "duration": 1477507954,
   "status": "passed"
 });
 formatter.match({
@@ -419,7 +419,7 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 1154218880,
+  "duration": 1025792497,
   "status": "passed"
 });
 formatter.match({
@@ -432,7 +432,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 169621287,
+  "duration": 149515164,
   "status": "passed"
 });
 formatter.match({
@@ -445,7 +445,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String)"
 });
 formatter.result({
-  "duration": 16717195970,
+  "duration": 3131062695,
   "error_message": "java.lang.NullPointerException\n\tat e2e.Geneity.steps.StepMethods.signed_in_user_makes_selection_and_submits_the_bet_with_value(StepMethods.java:38)\n\tat e2e.Geneity.steps.StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(StepDefinations.java:77)\n\tat ✽.And singed in user should able to select the selection and place the bet with \"1.00\"(Regression.feature:45)\n",
   "status": "failed"
 });
@@ -548,15 +548,16 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_geneity_url_in_chrome_web_browser()"
 });
 formatter.result({
-  "duration": 4829037501,
+  "duration": 2264256564,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 146561794,
-  "status": "passed"
+  "duration": 18905431,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.39.562737 (dba483cee6a5f15e2e2d73df16968ab10b38a2bf),platform\u003dLinux 4.4.0-133-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027gnl-l-w-015\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.4.0-133-generic\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562737 (dba483cee6a5f1..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: 7fa3f176df170c7f79318e4f660e4e72\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:275)\n\tat e2e.Geneity.objects.HomePageTitleAssertion.CheckTitleAssertion(HomePageTitleAssertion.java:16)\n\tat e2e.Geneity.steps.StepDefinations.unsigned_in_user_should_be_able_to_see_the_page(StepDefinations.java:38)\n\tat ✽.When unsigned in user should be able to see the page(Regression.feature:40)\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -572,15 +573,13 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 432638945,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 1698431449,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -592,8 +591,7 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 881091204,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -605,8 +603,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 149650737,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -618,28 +615,24 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String)"
 });
 formatter.result({
-  "duration": 468778805,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinations.verify_if_Bet_is_placed()"
 });
 formatter.result({
-  "duration": 11131150923,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinations.signed_in_user_logsout_from_webapplication()"
 });
 formatter.result({
-  "duration": 2311425778,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_or_signed_in_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 72816375,
-  "status": "passed"
+  "status": "skipped"
 });
 });

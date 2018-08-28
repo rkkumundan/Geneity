@@ -8,3 +8,4 @@ e2e/Geneity/steps/StepMethods.class
 e2e/Geneity/objects/UserLogin.class
 e2e/Geneity/objects/CloseBrowser.class
 e2e/Geneity/steps/StepDefinations.class
+e2e/Geneity/objects/HomePageTitleAssertion.class
