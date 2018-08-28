@@ -17,6 +17,7 @@
 		<selenium.java>3.12.0</selenium.java>
 		<maven.compiler.plugin>3.7.0</maven.compiler.plugin>
 		<cucumber.html>0.2.3</cucumber.html>
+		<slf4j.version>1.7.21</slf4j.version>
 	</properties>
 	<build>
 		<plugins>
@@ -97,6 +98,11 @@
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-core</artifactId>
 			<version>${cucumber.core}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${slf4j.version}</version>
 		</dependency>
 	</dependencies>
 </project>

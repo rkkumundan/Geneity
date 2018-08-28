@@ -1,4 +1,4 @@
-package e2e.Geneity.objects;
+package e2e.Geneity.interaction;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -11,6 +11,7 @@ public class CloseBrowser {
 		this.driver = driver;
 		}
 	public void CloseCurrentBrowser(){
+		driver.manage().deleteAllCookies();
 		driver.quit();
 		}
 }

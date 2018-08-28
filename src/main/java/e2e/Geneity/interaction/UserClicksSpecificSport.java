@@ -1,4 +1,4 @@
-package e2e.Geneity.objects;
+package e2e.Geneity.interaction;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

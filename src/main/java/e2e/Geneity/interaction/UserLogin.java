@@ -1,19 +1,13 @@
-package e2e.Geneity.objects;
+package e2e.Geneity.interaction;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class UserLogin {
-	WebDriver driver;
-	
-	@FindBy(name="username")
-	private WebElement UserName;
+import e2e.Geneity.user_interface.ui_model.TargetObjects;
 
-	@FindBy(name="password")
-	private WebElement Password;
-	
+public class UserLogin extends TargetObjects {
+	WebDriver driver;
+
 	public UserLogin(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;

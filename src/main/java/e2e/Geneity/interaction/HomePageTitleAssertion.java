@@ -1,4 +1,4 @@
-package e2e.Geneity.objects;
+package e2e.Geneity.interaction;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;

@@ -5,15 +5,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import e2e.Geneity.objects.CheckIfBetPlaced;
-import e2e.Geneity.objects.CloseBrowser;
-import e2e.Geneity.objects.HomePageTitleAssertion;
-import e2e.Geneity.objects.SportCheckAssertion;
-import e2e.Geneity.objects.UserClicksSpecificSport;
-import e2e.Geneity.objects.UserLogin;
-import e2e.Geneity.objects.UserLogout;
-import e2e.Geneity.objects.UserSubmitsLogin;
-import e2e.Geneity.objects.UserSubmitsLoginInvalidCredentials;
+import e2e.Geneity.interaction.CheckIfBetPlaced;
+import e2e.Geneity.interaction.CloseBrowser;
+import e2e.Geneity.interaction.HomePageTitleAssertion;
+import e2e.Geneity.interaction.SportCheckAssertion;
+import e2e.Geneity.interaction.UserChecksForMyaccountContent;
+import e2e.Geneity.interaction.UserClicksOnMyAccount;
+import e2e.Geneity.interaction.UserClicksSpecificSport;
+import e2e.Geneity.interaction.UserLogin;
+import e2e.Geneity.interaction.UserLogout;
+import e2e.Geneity.interaction.UserMakesSelectionPlacesBet;
+import e2e.Geneity.interaction.UserSubmitsLogin;
+import e2e.Geneity.interaction.UserSubmitsLoginInvalidCredentials;
 
 public class StepDefinations {
 	public WebDriver driver = new ChromeDriver();
@@ -27,9 +30,12 @@ public class StepDefinations {
 	SportCheckAssertion sportCheckAssertion;
 	UserLogout userLogout;
 	CheckIfBetPlaced checkIfBetPlaced;
+	UserClicksOnMyAccount userClicksOnMyAccount;
+	UserChecksForMyaccountContent userChecksForMyaccountContent;
+	UserMakesSelectionPlacesBet userMakesSelectionPlacesBet;
 
-	@Given("^unsigned in user opens the geneity url in chrome web browser$")
-	public void unsigned_in_user_opens_the_geneity_url_in_chrome_web_browser() throws Throwable {
+	@Given("^unsigned in user opens the geneity url in web browser$")
+	public void unsigned_in_user_opens_the_geneity_url_in_web_browser() throws Throwable {
 		SM.user_opens_genbet_url();
 	}
 	@Then("^unsigned in user should be able to see the page$")
@@ -74,11 +80,22 @@ public class StepDefinations {
 		}
 	@Then("^singed in user should able to select the selection and place the bet with \"([^\"]*)\"$")
 	public void singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String value) throws Throwable {
-		SM.signed_in_user_makes_selection_and_submits_the_bet_with_value(value);
+		userMakesSelectionPlacesBet = new UserMakesSelectionPlacesBet(driver);
+		userMakesSelectionPlacesBet.SelectionWithValue(value);
 	}
 	@Then("^verify if Bet is placed$")
 	public void verify_if_Bet_is_placed() throws Throwable {
 		checkIfBetPlaced = new CheckIfBetPlaced(driver);
 		checkIfBetPlaced.CheckBetStatus();
+	}
+	@Then("^signed in user clicks on My account to check the balance$")
+	public void signed_in_user_clicks_on_My_account_to_check_the_balance() throws Throwable {
+		userClicksOnMyAccount = new UserClicksOnMyAccount(driver);
+		userClicksOnMyAccount.UserClicksMyAccount();
+	}
+	@Then("^signed in user should able to see betlist, bonus and cashier in my account popup$")
+	public void signed_in_user_should_able_to_see_betlist_bonus_and_cashier_in_my_account_popup() throws Throwable {
+		userChecksForMyaccountContent = new UserChecksForMyaccountContent(driver);
+		userChecksForMyaccountContent.UserAccountAssertion();
 	}
 }
