@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith (Cucumber.class)
 @CucumberOptions(plugin={"pretty", "html:target/cucumber-reports"}, features = "src/test/resources/features", 
-glue="e2e.Geneity.steps", monochrome = true, tags = {"@RegressionTest"})
+glue="e2e.Geneity.steps", monochrome = true, tags = {"@SmokeTest"})
 
 public class runner {
 

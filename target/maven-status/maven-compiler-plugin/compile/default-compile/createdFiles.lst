@@ -1,3 +1,10 @@
+e2e/Geneity/objects/UserLogout.class
+e2e/Geneity/objects/UserSubmitsLoginInvalidCredentials.class
+e2e/Geneity/objects/UserSubmitsLogin.class
+e2e/Geneity/objects/CheckIfBetPlaced.class
+e2e/Geneity/objects/UserClicksSpecificSport.class
+e2e/Geneity/objects/SportCheckAssertion.class
 e2e/Geneity/steps/StepMethods.class
+e2e/Geneity/objects/UserLogin.class
 e2e/Geneity/objects/CloseBrowser.class
 e2e/Geneity/steps/StepDefinations.class
