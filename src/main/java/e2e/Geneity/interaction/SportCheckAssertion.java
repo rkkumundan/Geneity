@@ -10,12 +10,11 @@ import e2e.Geneity.user_interface.ui_model.TargetObjects;
 public class SportCheckAssertion extends TargetObjects {
 	WebDriver driver;
 		
-	public SportCheckAssertion(WebDriver driver) {
+	public SportCheckAssertion(WebDriver driver){
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
-	public void SportsCheck(String Sport)
-	{
+	public void SportsCheck(String Sport){
 		String Sporttype = SportType.getText();
 		assertThat(Sport, equalTo(Sporttype));
 	}

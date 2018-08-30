@@ -11,7 +11,7 @@ public class UserClicksSpecificSport {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
-	public void UserClicksOnSport(String sport) {
+	public void UserClicksOnSport(String sport){
 		driver.findElement(By.linkText(sport)).click();
 	}
 }

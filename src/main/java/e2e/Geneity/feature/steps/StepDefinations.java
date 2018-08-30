@@ -17,6 +17,7 @@ import e2e.Geneity.interaction.UserLogout;
 import e2e.Geneity.interaction.UserMakesSelectionPlacesBet;
 import e2e.Geneity.interaction.UserSubmitsLogin;
 import e2e.Geneity.interaction.UserSubmitsLoginInvalidCredentials;
+import e2e.Geneity.interaction.ZeroBalanceUserAssertion;
 
 public class StepDefinations {
 	public WebDriver driver = new ChromeDriver();
@@ -34,6 +35,7 @@ public class StepDefinations {
 	UserClicksOnMyAccount userClicksOnMyAccount;
 	UserChecksForMyaccountContent userChecksForMyaccountContent;
 	UserMakesSelectionPlacesBet userMakesSelectionPlacesBet;
+	ZeroBalanceUserAssertion zeroBalanceUserAssertion;
 
 	@Given("^unsigned in user opens the geneity url in web browser$")
 	public void unsigned_in_user_opens_the_geneity_url_in_web_browser() throws Throwable {
@@ -99,5 +101,12 @@ public class StepDefinations {
 	public void signed_in_user_should_able_to_see_betlist_bonus_and_cashier_in_my_account_popup() throws Throwable {
 		userChecksForMyaccountContent = new UserChecksForMyaccountContent(driver);
 		userChecksForMyaccountContent.UserAccountAssertion();
+	}
+	@Then("^verify that Bet is not placed$")
+	public void verify_that_Bet_is_not_placed() throws Throwable {
+		zeroBalanceUserAssertion = new ZeroBalanceUserAssertion(driver);
+		zeroBalanceUserAssertion.CheckBetStatus();
+		
+	  
 	}
 }

@@ -17,8 +17,7 @@ public class UserSubmitsLogin extends TargetObjects{
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
-	public void UserSubmitsLoginCheckAssertion()
-	{
+	public void UserSubmitsLoginCheckAssertion(){
 		LoginButton.click();
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		WebElement ErrorResponse;

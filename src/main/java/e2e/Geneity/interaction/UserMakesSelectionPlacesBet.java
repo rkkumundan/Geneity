@@ -12,12 +12,10 @@ public class UserMakesSelectionPlacesBet extends TargetObjects{
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
-	
-	public void SelectionWithValue(String value)
-	{
-		Button.click();
+
+	public void SelectionWithValue(String value){
+		SelectASelection.click();
 		SingleBetInput.sendKeys(value);
 		PlaceBetButton.click();
 	}
-
 }

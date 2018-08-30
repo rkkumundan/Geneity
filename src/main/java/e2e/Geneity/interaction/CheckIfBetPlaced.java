@@ -23,7 +23,6 @@ public class CheckIfBetPlaced extends TargetObjects{
 		ErrorResponse = wait.until(ExpectedConditions.visibilityOf(CheckInplaySelection));
 		String ExpectedErrorResponse = "Your bet has been placed";
 		String ActualErrorResponse = ErrorResponse.getText();
-		System.out.println(ActualErrorResponse);
 		assertThat(ActualErrorResponse, equalTo(ExpectedErrorResponse));
 	}
 }

@@ -1,15 +1,6 @@
 e2e/Geneity/interaction/HomePageTitleAssertion.class
-e2e/Geneity/interaction/UserSubmitsLoginInvalidCredentials.class
-e2e/Geneity/feature/steps/StepDefinations.class
-e2e/Geneity/interaction/UserClicksOnMyAccount.class
 e2e/Geneity/interaction/CloseBrowser.class
-e2e/Geneity/interaction/UserLogin.class
 e2e/Geneity/user_interface/ui_model/TargetObjects.class
 e2e/Geneity/interaction/UserClicksSpecificSport.class
-e2e/Geneity/interaction/UserLogout.class
-e2e/Geneity/interaction/CheckIfBetPlaced.class
 e2e/Geneity/interaction/UserSubmitsLogin.class
 e2e/Geneity/interaction/SportCheckAssertion.class
-e2e/Geneity/feature/steps/OpenBrowserURL.class
-e2e/Geneity/interaction/UserMakesSelectionPlacesBet.class
-e2e/Geneity/interaction/UserChecksForMyaccountContent.class

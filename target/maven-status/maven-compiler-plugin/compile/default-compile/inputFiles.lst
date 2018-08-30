@@ -3,6 +3,7 @@
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/user_interface/ui_model/TargetObjects.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserSubmitsLogin.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserLogout.java
+/home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/ZeroBalanceUserAssertion.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/HomePageTitleAssertion.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/CloseBrowser.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/feature/steps/StepDefinations.java

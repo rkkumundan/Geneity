@@ -10,20 +10,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import e2e.Geneity.user_interface.ui_model.TargetObjects;
 
-public class UserSubmitsLoginInvalidCredentials extends TargetObjects {
+public class ZeroBalanceUserAssertion extends TargetObjects{
 	WebDriver driver;
-
-	public UserSubmitsLoginInvalidCredentials(WebDriver driver) {
+	
+	public ZeroBalanceUserAssertion(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		this.driver = driver;
+		this.driver=driver;   
 	}
-	public void UserCheckInvaildCredentials(){
-		LoginButton.click();
-		WebDriverWait wait = new WebDriverWait(driver,30);
+	public void CheckBetStatus() {
+		WebDriverWait wait = new WebDriverWait(driver,60);
 		WebElement ErrorResponse;
-		ErrorResponse = wait.until(ExpectedConditions.visibilityOf(ErrorReseponse));
+		ErrorResponse = wait.until(ExpectedConditions.visibilityOf(CheckFailedInplaySelection));
+		String ExpectedErrorResponse = "Add funds to your account";
 		String ActualErrorResponse = ErrorResponse.getText();
-		String ExpectedErrorResponse = "Incorrect username or password entered.<br>Verify your account information and try again.\nx";
 		assertThat(ActualErrorResponse, equalTo(ExpectedErrorResponse));
 	}
+
 }
