@@ -7,6 +7,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import e2e.Geneity.interaction.CheckIfBetPlaced;
 import e2e.Geneity.interaction.CloseBrowser;
+import e2e.Geneity.interaction.DoubleBetSelection;
 import e2e.Geneity.interaction.HomePageTitleAssertion;
 import e2e.Geneity.interaction.SportCheckAssertion;
 import e2e.Geneity.interaction.UserChecksForMyaccountContent;
@@ -15,6 +16,7 @@ import e2e.Geneity.interaction.UserClicksSpecificSport;
 import e2e.Geneity.interaction.UserLogin;
 import e2e.Geneity.interaction.UserLogout;
 import e2e.Geneity.interaction.UserMakesSelectionPlacesBet;
+import e2e.Geneity.interaction.UserPlacesDoubleBet;
 import e2e.Geneity.interaction.UserSubmitsLogin;
 import e2e.Geneity.interaction.UserSubmitsLoginInvalidCredentials;
 import e2e.Geneity.interaction.ZeroBalanceUserAssertion;
@@ -36,6 +38,8 @@ public class StepDefinations {
 	UserChecksForMyaccountContent userChecksForMyaccountContent;
 	UserMakesSelectionPlacesBet userMakesSelectionPlacesBet;
 	ZeroBalanceUserAssertion zeroBalanceUserAssertion;
+	DoubleBetSelection doubleBetSelection;
+	UserPlacesDoubleBet userPlacesDoubleBet;
 
 	@Given("^unsigned in user opens the geneity url in web browser$")
 	public void unsigned_in_user_opens_the_geneity_url_in_web_browser() throws Throwable {
@@ -105,8 +109,16 @@ public class StepDefinations {
 	@Then("^verify that Bet is not placed$")
 	public void verify_that_Bet_is_not_placed() throws Throwable {
 		zeroBalanceUserAssertion = new ZeroBalanceUserAssertion(driver);
-		zeroBalanceUserAssertion.CheckBetStatus();
-		
-	  
+		zeroBalanceUserAssertion.CheckBetStatus();  
+	}
+	@Then("^singed in user should able to select the selection for the \"([^\"]*)\"$")
+	public void singed_in_user_should_able_to_select_the_selection_for_the(String sportname) throws Throwable {
+		doubleBetSelection = new DoubleBetSelection(driver);
+		doubleBetSelection.UserMakesSelection();
+	}
+	@Then("^singed in user should be able to enter the value for double bet with \"([^\"]*)\"$")
+	public void singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with(String value) throws Throwable {
+		userPlacesDoubleBet = new UserPlacesDoubleBet(driver);
+		userPlacesDoubleBet.UserPlacestheDoubleBet(value);	    
 	}
 }

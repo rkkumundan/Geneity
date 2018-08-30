@@ -9,8 +9,10 @@
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/feature/steps/StepDefinations.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/CheckIfBetPlaced.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserMakesSelectionPlacesBet.java
+/home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/DoubleBetSelection.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserSubmitsLoginInvalidCredentials.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserChecksForMyaccountContent.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserClicksOnMyAccount.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/feature/steps/OpenBrowserURL.java
 /home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserLogin.java
+/home/rajkumar.kumundan/git/Geneity/src/main/java/e2e/Geneity/interaction/UserPlacesDoubleBet.java

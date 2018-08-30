@@ -57,6 +57,9 @@ public class TargetObjects {
 	@FindBy(name="bet_spl")
 	public WebElement SingleBetInput;
 	
+	@FindBy(xpath="//*[@id=\'betslip\']/table[1]/tbody[3]/tr[3]/td/table/tbody/tr/td[2]/div/input")
+	public WebElement DoubleBetInput;
+	
 	@FindBy(name="place_slip")
 	public WebElement PlaceBetButton;
 }

@@ -7,125 +7,132 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 72,
-  "name": "Verify if a Vaild user with zero (\u00270\u0027) balance shouldnot be able to Place a bet for Inplay event",
+  "line": 89,
+  "name": "Verify if a Vaild user able is able to Place a double bets for Inplay event",
   "description": "",
-  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-with-zero-(\u00270\u0027)-balance-shouldnot-be-able-to-place-a-bet-for-inplay-event",
+  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 71,
+      "line": 88,
       "name": "@SmokeTest"
     }
   ]
 });
 formatter.step({
-  "line": 73,
+  "line": 90,
   "name": "unsigned in user opens the geneity url in web browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 74,
+  "line": 91,
   "name": "unsigned in user should be able to see the page",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.step({
-  "line": 75,
+  "line": 92,
   "name": "unsigned in user should be able to enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 76,
+  "line": 93,
   "name": "unsigned in user submits the form",
   "keyword": "And "
 });
 formatter.step({
-  "line": 77,
-  "name": "signed in user able to click on the \"\u003csport\u003e\"",
-  "keyword": "And "
+  "line": 94,
+  "name": "signed in user able to click on the \"\u003csport1\u003e\"",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 78,
-  "name": "singed in user should able to open the \"\u003csport\u003e\" page",
+  "line": 95,
+  "name": "singed in user should able to open the \"\u003csport1\u003e\" page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 79,
-  "name": "singed in user should able to select the selection and place the bet with \"\u003cvalue\u003e\"",
+  "line": 96,
+  "name": "singed in user should able to select the selection for the \"\u003csport2\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 80,
-  "name": "verify that Bet is not placed",
+  "line": 97,
+  "name": "signed in user able to click on the \"\u003csport2\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 81,
-  "name": "signed in user logsout from webapplication",
+  "line": 98,
+  "name": "singed in user should able to open the \"\u003csport2\u003e\" page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 99,
+  "name": "singed in user should able to select the selection for the \"\u003csport2\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 82,
-  "name": "unsigned or signed in user closes the browser",
+  "line": 100,
+  "name": "singed in user should be able to enter the value for double bet with \"\u003cvalue\u003e\"",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 84,
+  "line": 102,
   "name": "",
   "description": "",
-  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-with-zero-(\u00270\u0027)-balance-shouldnot-be-able-to-place-a-bet-for-inplay-event;",
+  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;",
   "rows": [
     {
       "cells": [
         "username",
         "password",
-        "sport",
+        "sport1",
+        "sport2",
         "value"
       ],
-      "line": 85,
-      "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-with-zero-(\u00270\u0027)-balance-shouldnot-be-able-to-place-a-bet-for-inplay-event;;1"
+      "line": 103,
+      "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;;1"
     },
     {
       "cells": [
-        "zerouser01",
+        "rajqa",
         "g3n31ty123",
         "Football",
-        "1.00"
+        "Tennis",
+        "2.00"
       ],
-      "line": 86,
-      "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-with-zero-(\u00270\u0027)-balance-shouldnot-be-able-to-place-a-bet-for-inplay-event;;2"
+      "line": 104,
+      "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 86,
-  "name": "Verify if a Vaild user with zero (\u00270\u0027) balance shouldnot be able to Place a bet for Inplay event",
+  "line": 104,
+  "name": "Verify if a Vaild user able is able to Place a double bets for Inplay event",
   "description": "",
-  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-with-zero-(\u00270\u0027)-balance-shouldnot-be-able-to-place-a-bet-for-inplay-event;;2",
+  "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 71,
+      "line": 88,
       "name": "@SmokeTest"
     }
   ]
 });
 formatter.step({
-  "line": 73,
+  "line": 90,
   "name": "unsigned in user opens the geneity url in web browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 74,
+  "line": 91,
   "name": "unsigned in user should be able to see the page",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.step({
-  "line": 75,
-  "name": "unsigned in user should be able to enter \"zerouser01\" and \"g3n31ty123\"",
+  "line": 92,
+  "name": "unsigned in user should be able to enter \"rajqa\" and \"g3n31ty123\"",
   "matchedColumns": [
     0,
     1
@@ -133,20 +140,20 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 76,
+  "line": 93,
   "name": "unsigned in user submits the form",
   "keyword": "And "
 });
 formatter.step({
-  "line": 77,
+  "line": 94,
   "name": "signed in user able to click on the \"Football\"",
   "matchedColumns": [
     2
   ],
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 78,
+  "line": 95,
   "name": "singed in user should able to open the \"Football\" page",
   "matchedColumns": [
     2
@@ -154,64 +161,81 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 79,
-  "name": "singed in user should able to select the selection and place the bet with \"1.00\"",
+  "line": 96,
+  "name": "singed in user should able to select the selection for the \"Tennis\"",
   "matchedColumns": [
     3
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 80,
-  "name": "verify that Bet is not placed",
+  "line": 97,
+  "name": "signed in user able to click on the \"Tennis\"",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 81,
-  "name": "signed in user logsout from webapplication",
+  "line": 98,
+  "name": "singed in user should able to open the \"Tennis\" page",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 99,
+  "name": "singed in user should able to select the selection for the \"Tennis\"",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 82,
-  "name": "unsigned or signed in user closes the browser",
+  "line": 100,
+  "name": "singed in user should be able to enter the value for double bet with \"2.00\"",
+  "matchedColumns": [
+    4
+  ],
   "keyword": "And "
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_geneity_url_in_web_browser()"
 });
 formatter.result({
-  "duration": 14868825284,
+  "duration": 14954516716,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 170156261,
+  "duration": 134764843,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "zerouser01",
+      "val": "rajqa",
       "offset": 42
     },
     {
       "val": "g3n31ty123",
-      "offset": 59
+      "offset": 54
     }
   ],
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 803885754,
+  "duration": 873257521,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 2106527108,
+  "duration": 1853786023,
   "status": "passed"
 });
 formatter.match({
@@ -224,7 +248,7 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 5559646889,
+  "duration": 5053196032,
   "status": "passed"
 });
 formatter.match({
@@ -237,41 +261,72 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 106453813,
+  "duration": 97857012,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1.00",
-      "offset": 75
+      "val": "Tennis",
+      "offset": 60
     }
   ],
-  "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_and_place_the_bet_with(String)"
+  "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_for_the(String)"
 });
 formatter.result({
-  "duration": 662380581,
+  "duration": 109990825,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinations.verify_that_Bet_is_not_placed()"
+  "arguments": [
+    {
+      "val": "Tennis",
+      "offset": 37
+    }
+  ],
+  "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 669466899,
+  "duration": 5539518082,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinations.signed_in_user_logsout_from_webapplication()"
+  "arguments": [
+    {
+      "val": "Tennis",
+      "offset": 40
+    }
+  ],
+  "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 5417789201,
+  "duration": 39775885,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinations.unsigned_or_signed_in_user_closes_the_browser()"
+  "arguments": [
+    {
+      "val": "Tennis",
+      "offset": 60
+    }
+  ],
+  "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_for_the(String)"
 });
 formatter.result({
-  "duration": 256790927,
+  "duration": 107293697,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "2.00",
+      "offset": 70
+    }
+  ],
+  "location": "StepDefinations.singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with(String)"
+});
+formatter.result({
+  "duration": 282260876,
   "status": "passed"
 });
 });
