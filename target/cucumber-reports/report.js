@@ -369,7 +369,18 @@ formatter.result({
 formatter.match({
   "location": "StepDefinations.signed_in_user_logsout_from_webapplication()"
 });
-rImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\n\tat e2e.Geneity.interaction.UserPlacesDoubleBet.UserPlacestheDoubleBet(UserPlacesDoubleBet.java:17)\n\tat e2e.Geneity.feature.steps.StepDefinations.singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with_and_places_the_bet(StepDefinations.java:122)\n\tat ✽.And singed in user should be able to enter the value for double bet with \"2.00\" and places the bet(Regression.feature:100)\n",
+formatter.result({
+  "duration": 14252280480,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinations.unsigned_or_signed_in_user_closes_the_browser()"
+});
+formatter.result({
+  "duration": 244328463,
+  "status": "passed"
+});
+});t e2e.Geneity.interaction.UserPlacesDoubleBet.UserPlacestheDoubleBet(UserPlacesDoubleBet.java:17)\n\tat e2e.Geneity.feature.steps.StepDefinations.singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with_and_places_the_bet(StepDefinations.java:122)\n\tat ✽.And singed in user should be able to enter the value for double bet with \"2.00\" and places the bet(Regression.feature:100)\n",
   "status": "failed"
 });
 formatter.match({
