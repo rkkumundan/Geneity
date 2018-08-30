@@ -72,11 +72,26 @@ formatter.step({
 });
 formatter.step({
   "line": 100,
-  "name": "singed in user should be able to enter the value for double bet with \"\u003cvalue\u003e\"",
+  "name": "singed in user should be able to enter the value for double bet with \"\u003cvalue\u003e\" and places the bet",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 101,
+  "name": "verify if Bet is placed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 102,
+  "name": "signed in user logsout from webapplication",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 103,
+  "name": "unsigned or signed in user closes the browser",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 102,
+  "line": 105,
   "name": "",
   "description": "",
   "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;",
@@ -89,7 +104,7 @@ formatter.examples({
         "sport2",
         "value"
       ],
-      "line": 103,
+      "line": 106,
       "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;;1"
     },
     {
@@ -100,14 +115,14 @@ formatter.examples({
         "Tennis",
         "2.00"
       ],
-      "line": 104,
+      "line": 107,
       "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 104,
+  "line": 107,
   "name": "Verify if a Vaild user able is able to Place a double bets for Inplay event",
   "description": "",
   "id": "to-test-the-geneity-frontend-functionality;verify-if-a-vaild-user-able-is-able-to-place-a-double-bets-for-inplay-event;;2",
@@ -194,24 +209,39 @@ formatter.step({
 });
 formatter.step({
   "line": 100,
-  "name": "singed in user should be able to enter the value for double bet with \"2.00\"",
+  "name": "singed in user should be able to enter the value for double bet with \"2.00\" and places the bet",
   "matchedColumns": [
     4
   ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 101,
+  "name": "verify if Bet is placed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 102,
+  "name": "signed in user logsout from webapplication",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 103,
+  "name": "unsigned or signed in user closes the browser",
   "keyword": "And "
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_opens_the_geneity_url_in_web_browser()"
 });
 formatter.result({
-  "duration": 14954516716,
+  "duration": 14195717095,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_see_the_page()"
 });
 formatter.result({
-  "duration": 134764843,
+  "duration": 204050187,
   "status": "passed"
 });
 formatter.match({
@@ -228,14 +258,14 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_should_be_able_to_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 873257521,
+  "duration": 819575109,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.unsigned_in_user_submits_the_form()"
 });
 formatter.result({
-  "duration": 1853786023,
+  "duration": 1781909512,
   "status": "passed"
 });
 formatter.match({
@@ -248,7 +278,7 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 5053196032,
+  "duration": 6880672201,
   "status": "passed"
 });
 formatter.match({
@@ -261,7 +291,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 97857012,
+  "duration": 45917836,
   "status": "passed"
 });
 formatter.match({
@@ -274,7 +304,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_for_the(String)"
 });
 formatter.result({
-  "duration": 109990825,
+  "duration": 5095131678,
   "status": "passed"
 });
 formatter.match({
@@ -287,7 +317,7 @@ formatter.match({
   "location": "StepDefinations.unsigned_in_user_able_to_click_on_the(String)"
 });
 formatter.result({
-  "duration": 5539518082,
+  "duration": 11453742811,
   "status": "passed"
 });
 formatter.match({
@@ -300,7 +330,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_open_the_page(String)"
 });
 formatter.result({
-  "duration": 39775885,
+  "duration": 39889462,
   "status": "passed"
 });
 formatter.match({
@@ -313,7 +343,7 @@ formatter.match({
   "location": "StepDefinations.singed_in_user_should_able_to_select_the_selection_for_the(String)"
 });
 formatter.result({
-  "duration": 107293697,
+  "duration": 2007256830,
   "status": "passed"
 });
 formatter.match({
@@ -323,10 +353,41 @@ formatter.match({
       "offset": 70
     }
   ],
-  "location": "StepDefinations.singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with(String)"
+  "location": "StepDefinations.singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with_and_places_the_bet(String)"
 });
 formatter.result({
-  "duration": 282260876,
+  "duration": 284473128,
   "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinations.verify_if_Bet_is_placed()"
+});
+formatter.result({
+  "duration": 39511216468,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinations.signed_in_user_logsout_from_webapplication()"
+});
+rImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\n\tat e2e.Geneity.interaction.UserPlacesDoubleBet.UserPlacestheDoubleBet(UserPlacesDoubleBet.java:17)\n\tat e2e.Geneity.feature.steps.StepDefinations.singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with_and_places_the_bet(StepDefinations.java:122)\n\tat ✽.And singed in user should be able to enter the value for double bet with \"2.00\" and places the bet(Regression.feature:100)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "StepDefinations.verify_if_Bet_is_placed()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepDefinations.signed_in_user_logsout_from_webapplication()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepDefinations.unsigned_or_signed_in_user_closes_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

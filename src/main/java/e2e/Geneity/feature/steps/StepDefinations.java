@@ -116,8 +116,8 @@ public class StepDefinations {
 		doubleBetSelection = new DoubleBetSelection(driver);
 		doubleBetSelection.UserMakesSelection();
 	}
-	@Then("^singed in user should be able to enter the value for double bet with \"([^\"]*)\"$")
-	public void singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with(String value) throws Throwable {
+	@Then("^singed in user should be able to enter the value for double bet with \"([^\"]*)\" and places the bet$")
+	public void singed_in_user_should_be_able_to_enter_the_value_for_double_bet_with_and_places_the_bet(String value) throws Throwable {
 		userPlacesDoubleBet = new UserPlacesDoubleBet(driver);
 		userPlacesDoubleBet.UserPlacestheDoubleBet(value);	    
 	}

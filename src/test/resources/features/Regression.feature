@@ -97,8 +97,8 @@ And singed in user should able to select the selection for the "<sport2>"
 And signed in user able to click on the "<sport2>"
 Then singed in user should able to open the "<sport2>" page
 And singed in user should able to select the selection for the "<sport2>"
-And singed in user should be able to enter the value for double bet with "<value>"
-And verify that Bet is not placed
+And singed in user should be able to enter the value for double bet with "<value>" and places the bet
+And verify if Bet is placed
 And signed in user logsout from webapplication
 And unsigned or signed in user closes the browser
 
